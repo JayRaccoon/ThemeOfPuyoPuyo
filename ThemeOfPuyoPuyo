@@ -1,0 +1,55 @@
+use_bpm 125
+use_synth :pulse
+live_loop :bayoen do
+  8.times do
+    play :c3
+    sleep 0.5
+  end
+  8.times do
+    play :d3
+    sleep 0.5
+  end
+end
+loop do
+  wait 0.5
+  play :c5
+  wait 1
+  play :a4
+  wait 0.5
+  play :b4
+  wait 1
+  play :a4
+  wait 0.5
+  play :b4
+  wait 0.5
+  play :d5
+  wait 0.5
+  play :d5
+  wait 0.5
+  play :c5
+  wait 0.5
+  play :b4
+  wait 0.5
+  play :a4
+  wait 0.5
+  play :b4
+  wait 2
+  play :c5
+  wait 1
+  play :a4
+  wait 0.5
+  play :b4
+  wait 1
+  play :a4
+  wait 0.5
+  play :b4
+  wait 0.5
+  play :g4
+  wait 0.5
+  play :f4
+  wait 0.5
+  play :e4
+  wait 0.5
+  play :d4
+  sleep 2.5
+end
